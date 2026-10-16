@@ -1,5 +1,5 @@
 /**
- * ABRATEC — script.js
+ * ABRATEC - script.js
  * Comportamentos interativos compartilhados entre todas as páginas.
  * Executado após components.js (header/footer já injetados).
  */
@@ -73,6 +73,63 @@
         obs.observe(el);
       }
     });
+  }
+
+  /* ── Animate client review scores (cases.html) ───── */
+  function initReviews() {
+    const section = document.querySelector('[data-reviews]');
+    if (!section) return;
+
+    const counters = section.querySelectorAll('[data-count-to]');
+    const bars = section.querySelectorAll('[data-review-percent]');
+    const formatter = new Intl.NumberFormat('pt-BR');
+    const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    function animate() {
+      counters.forEach(el => {
+        const target = Number(el.dataset.countTo);
+        const decimals = Number(el.dataset.decimals || 0);
+        if (!Number.isFinite(target)) return;
+        if (reducedMotion) {
+          el.textContent = decimals ? target.toFixed(decimals).replace('.', ',') : formatter.format(target);
+          return;
+        }
+
+        const start = performance.now();
+        const duration = 1200;
+        function frame(now) {
+          const progress = Math.min((now - start) / duration, 1);
+          const eased = 1 - Math.pow(1 - progress, 3);
+          const value = target * eased;
+          el.textContent = decimals
+            ? value.toFixed(decimals).replace('.', ',')
+            : formatter.format(Math.floor(value));
+          if (progress < 1) requestAnimationFrame(frame);
+        }
+        requestAnimationFrame(frame);
+      });
+
+      bars.forEach(bar => {
+        const percent = Number(bar.dataset.reviewPercent);
+        if (!Number.isFinite(percent)) return;
+        bar.style.width = `${percent}%`;
+        const track = bar.closest('[role="progressbar"]');
+        if (track) track.setAttribute('aria-valuenow', percent.toFixed(2));
+      });
+    }
+
+    if (reducedMotion || !('IntersectionObserver' in window)) {
+      animate();
+      return;
+    }
+
+    const observer = new IntersectionObserver(entries => {
+      if (entries.some(entry => entry.isIntersecting)) {
+        animate();
+        observer.disconnect();
+      }
+    }, { threshold: 0.3 });
+    observer.observe(section);
   }
 
   /* ── Scroll to top ────────────────────────────────── */
@@ -154,7 +211,7 @@
     const set = (id, val) => {
       const el = document.getElementById(id);
       if (!el) return;
-      el.textContent = (val && !val.includes('_CONFIGURAR')) ? val : 'A configurar — edite config.js';
+      el.textContent = (val && !val.includes('_CONFIGURAR')) ? val : 'A configurar - edite config.js';
     };
     set('info-telefone', c.telefone);
     set('info-email',    c.email);
@@ -218,6 +275,7 @@
   initServicosResumo();
   initEquipe();
   initScrollReveal();
+  initReviews();
   initContactInfo();
   initForm();
   initFooterServices();

@@ -1,5 +1,5 @@
 /**
- * ABRATEC — components.js
+ * ABRATEC - components.js
  * Monta e insere o cabeçalho, o rodapé e os botões flutuantes nas páginas.
  * Depende de config.js, que precisa ser carregado antes deste arquivo.
  * Como o script fica no final do <body>, os elementos que ele procura já existem.
@@ -34,6 +34,7 @@
     { id: 'home',       label: 'Início',           href: 'index.html' },
     { id: 'quem-somos', label: 'Quem Somos',        href: 'quem-somos.html' },
     { id: 'servicos',   label: 'Áreas de Atuação',  href: 'servicos.html' },
+    { id: 'cases',      label: 'Cases de Sucesso',  href: 'cases.html' },
   ];
 
   /* ── Criação do cabeçalho ─────────────────────────────── */
@@ -54,7 +55,7 @@
 <header id="mainHeader">
   <div class="header-inner">
     <!-- Logo clicável que leva de volta à página inicial. -->
-    <a href="index.html" class="logo-link" aria-label="ABRATEC — página inicial">
+    <a href="index.html" class="logo-link" aria-label="ABRATEC - página inicial">
       <img src="assets/logob.png" alt="Logo ABRATEC Serviços" class="logo-img">
     </a>
     <!-- Menu principal e botão para solicitar atendimento pelo WhatsApp. -->
@@ -113,6 +114,7 @@
         <li><a href="index.html">Início</a></li>
         <li><a href="quem-somos.html">Quem Somos</a></li>
         <li><a href="servicos.html">Áreas de Atuação</a></li>
+        <li><a href="cases.html">Cases de Sucesso</a></li>
       </ul>
     </div>
     <!-- Links para os primeiros serviços cadastrados em config.js. -->
@@ -127,6 +129,10 @@
         <li><a href="${url}" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
       </ul>
       ${c.horario ? `<p class="footer-info footer-info-sm">Horário de atendimento: ${c.horario}</p>` : ''}
+      <div class="footer-auvo">
+        <span>Sistema de gestão</span>
+        <img src="assets/Auvo.png" alt="Auvo - Gestão de Serviços" loading="lazy">
+      </div>
     </div>
   </div>
   <!-- Faixa inferior com direitos autorais e slogan. -->

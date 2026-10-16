@@ -1,6 +1,6 @@
 /**
  * ============================================================
- * ABRATEC — Arquivo de Configuração Central do Site
+ * ABRATEC - Arquivo de Configuração Central do Site
  * ============================================================
  * Edite este arquivo para atualizar as informações do site.
  * Não é necessário alterar index.html, styles.css ou script.js
@@ -32,7 +32,7 @@ const ABRATEC_CONFIG = {
     whatsappMensagem: 'Ol%C3%A1%21+Conhe%C3%A7a+a+ABRATEC+pelo+site+e+gostaria+de+mais+informa%C3%A7%C3%B5es+sobre+os+servi%C3%A7os+de+manuten%C3%A7%C3%A3o+e+engenharia.',
     telefone:         'TELEFONE_A_CONFIGURAR',          // Ex: (11) 4437-2375
     email:            'EMAIL_A_CONFIGURAR',             // Ex: contato@abra.tec.br
-    endereco:         'ENDEREÇO_A_CONFIGURAR',          // Ex: São Paulo – SP
+    endereco:         'ENDEREÇO_A_CONFIGURAR',          // Ex: São Paulo - SP
     horario:          '07h às 17h',
     site:             'www.abra.tec.br',
     cnpj:             '',  // Deixar vazio se não quiser exibir

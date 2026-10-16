@@ -1,0 +1,4 @@
+# Source case documents contain client names; publish only anonymized assets.
+/Case_*.docx
+/assets/cases/Case_*.docx
+/assets/cases/Case_*.jpeg

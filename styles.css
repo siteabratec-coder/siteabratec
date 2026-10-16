@@ -1,5 +1,5 @@
 /* ============================================================
-   ABRATEC — Estilos Globais (todas as páginas)
+   ABRATEC - Estilos Globais (todas as páginas)
    Paleta: exclusivamente tons de azul + branco
    ============================================================ */
 :root {
@@ -218,6 +218,68 @@ blockquote cite{font-size:.88rem;font-style:normal;color:var(--blue-100);font-we
 .servicos-page-cta h3{font-size:1.5rem;color:var(--white);margin-bottom:12px}
 .servicos-page-cta p{color:rgba(255,255,255,.75);margin-bottom:28px;font-size:1.05rem}
 
+/* ── CASES DE SUCESSO ────────────── */
+.cases-intro{background:var(--navy-700);padding:28px 0;text-align:center}
+.cases-intro p{color:rgba(255,255,255,.78);max-width:780px;margin:0 auto;font-size:1.02rem}
+.cases-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;padding:32px 0 72px}
+.case-card{display:block;overflow:hidden;background:var(--white);border:1px solid var(--blue-050);border-radius:var(--radius-lg);box-shadow:var(--shadow-sm);transition:var(--transition);color:inherit}
+.case-card:hover{transform:translateY(-4px);border-color:var(--blue-100);box-shadow:var(--shadow)}
+.case-card:focus-visible{outline:3px solid var(--blue-200);outline-offset:4px}
+.case-card-image{width:100%;height:240px;object-fit:cover;background:var(--sky)}
+.case-card-content{padding:24px 28px 28px}
+.case-region{display:inline-block;margin-bottom:12px;color:var(--blue-300);font-size:.76rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+.case-card h2{margin-bottom:12px;color:var(--navy-700);font-size:1.25rem}
+.case-card p{font-size:.92rem;line-height:1.7}
+.case-card p+p{margin-top:10px}
+.reviews-section{background:var(--off-white);padding:64px 0 72px}
+.reviews-section .section-header{margin-bottom:36px}
+.reviews-layout{display:grid;grid-template-columns:minmax(220px,.8fr) minmax(0,1.7fr);gap:48px;align-items:center;max-width:900px;margin:0 auto 36px}
+.reviews-score{text-align:center}
+.reviews-score-label{margin-bottom:4px;font-weight:600;color:var(--text-muted)}
+.reviews-rating{display:flex;justify-content:center;align-items:baseline;gap:6px}
+.reviews-rating-value{font-size:clamp(3.2rem,6vw,4.5rem);font-weight:800;line-height:1;color:var(--navy-700);font-variant-numeric:tabular-nums}
+.reviews-rating-scale{font-size:1rem;color:var(--text-muted)}
+.reviews-stars{margin:8px 0;color:var(--blue-300);font-size:1.5rem;letter-spacing:.12em}
+.reviews-score>p:last-child{font-size:.9rem}
+.reviews-distribution{display:grid;gap:12px}
+.review-row{display:grid;grid-template-columns:82px minmax(0,1fr) 36px;gap:12px;align-items:center;color:var(--text-muted);font-size:.85rem}
+.review-count{font-variant-numeric:tabular-nums;text-align:right}
+.review-track{height:9px;overflow:hidden;background:var(--sky-deep);border-radius:20px}
+.review-fill{display:block;width:0;height:100%;background:linear-gradient(90deg,var(--blue-300),var(--blue-150));border-radius:inherit;transition:width 1.1s cubic-bezier(.2,.7,.2,1)}
+.review-quotes{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;max-width:900px;margin:0 auto}
+.review-quote{height:100%;padding:24px 26px;background:var(--white);border:1px solid var(--blue-050);border-left:3px solid var(--blue-200);border-radius:var(--radius);box-shadow:var(--shadow-sm)}
+.review-quote blockquote{margin-bottom:12px;color:var(--navy-700);font-size:1rem;font-weight:500}
+.review-quote figcaption{color:var(--text-muted);font-size:.84rem}
+.case-detail-hero{display:grid;grid-template-columns:1.05fr 1fr;gap:48px;align-items:center;margin-top:36px;margin-bottom:32px}
+.case-detail-hero-image{width:100%;height:380px;object-fit:cover;object-position:center 45%;border-radius:var(--radius-lg);box-shadow:var(--shadow)}
+.case-detail-hero-copy h2{color:var(--navy-700);margin:10px 0 14px}
+.case-detail-hero-copy p{font-size:1rem}
+.case-facts-section{margin-bottom:40px}
+.case-facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px}
+.case-fact{padding:18px 20px;background:var(--sky);border-left:3px solid var(--blue-200);border-radius:var(--radius-sm)}
+.case-fact dt{margin-bottom:5px;color:var(--blue-300);font-size:.75rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase}
+.case-fact dd{color:var(--navy-700);font-size:.93rem;font-weight:600}
+.case-metrics{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-bottom:40px}
+.case-metric{display:flex;flex-direction:column;gap:5px;padding:22px;background:var(--navy-700);border-radius:var(--radius);text-align:center;color:var(--white)}
+.case-metric strong{color:var(--blue-100);font-size:2rem;line-height:1.1}
+.case-metric span{font-size:.9rem;font-weight:600}
+.case-metric small{color:rgba(255,255,255,.7);font-size:.78rem}
+.case-detail-sections{max-width:920px;margin-bottom:64px}
+.case-detail-section+.case-detail-section{margin-top:32px}
+.case-detail-section h2{margin-bottom:14px;color:var(--navy-700);font-size:1.45rem}
+.case-detail-section p{margin:0 0 14px}
+.case-detail-list{margin:10px 0 18px;padding-left:24px;list-style:disc}
+.case-detail-list li{padding:4px 0;color:var(--text-muted);line-height:1.7}
+.case-gallery-section{padding:52px 0 60px;background:var(--off-white)}
+.case-gallery-section h2{margin-bottom:24px;color:var(--navy-700)}
+.case-gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.case-gallery-item{position:relative;overflow:hidden;background:var(--white);border:1px solid var(--blue-050);border-radius:var(--radius);box-shadow:var(--shadow-sm)}
+.case-gallery-item img{width:100%;aspect-ratio:4/3;object-fit:cover;background:var(--sky)}
+.case-gallery-phase{position:absolute;top:10px;left:10px;padding:4px 9px;background:rgba(0,21,41,.82);border-radius:20px;color:var(--white);font-size:.7rem;font-weight:700}
+.case-gallery-item figcaption{padding:12px 14px;color:var(--text-muted);font-size:.82rem;line-height:1.5}
+.case-detail-back{padding-top:32px;padding-bottom:64px}
+@media(prefers-reduced-motion:reduce){.review-fill{transition:none}}
+
 /* ── EQUIPE PAGE ─────────────────── */
 .equipe-aviso{display:flex;align-items:flex-start;gap:12px;background:rgba(0,96,176,.06);border:1px solid rgba(0,96,176,.2);border-radius:var(--radius);padding:18px 22px;margin-bottom:48px;font-size:.9rem}
 .equipe-aviso svg{width:20px;height:20px;color:var(--blue-300);flex-shrink:0;margin-top:2px}
@@ -268,10 +330,13 @@ blockquote cite{font-size:.88rem;font-style:normal;color:var(--blue-100);font-we
 /* ── FOOTER ──────────────────────── */
 #footer{background:var(--navy-900);color:rgba(255,255,255,.75)}
 .footer-top{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:48px;max-width:1200px;margin:0 auto;padding:72px 24px 48px}
-.footer-logo{height:52px;width:auto;margin-bottom:16px;filter:brightness(10)}
+.footer-logo{height:64px;width:auto;margin-bottom:16px;filter:brightness(10)}
 .footer-slogan{font-weight:600;font-size:.95rem;color:var(--white);margin-bottom:14px}
 .footer-info{font-size:.85rem;color:rgba(255,255,255,.55);margin-bottom:4px}
 .footer-info-sm{font-size:.8rem;margin-top:8px}
+.footer-auvo{display:flex;flex-direction:column;align-items:flex-start;gap:8px;margin-top:24px}
+.footer-auvo span{font-size:.75rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:rgba(255,255,255,.55)}
+.footer-auvo img{width:64px;height:64px;object-fit:contain;filter:brightness(0) invert(1);opacity:.88}
 .footer-col h4{font-size:.82rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--blue-100);margin-bottom:20px}
 .footer-col ul{display:flex;flex-direction:column;gap:10px}
 .footer-col a{font-size:.9rem;color:rgba(255,255,255,.6);transition:color .2s}
@@ -323,6 +388,14 @@ blockquote cite{font-size:.88rem;font-style:normal;color:var(--blue-100);font-we
   .mvv-grid{grid-template-columns:1fr}
   .servicos-grid-page{grid-template-columns:1fr}
   .servicos-page-cta{padding:40px 28px}
+  .cases-grid{grid-template-columns:1fr;padding-top:24px}
+  .case-card-image{height:220px}
+  .reviews-layout{grid-template-columns:1fr;gap:28px}
+  .review-quotes{grid-template-columns:1fr}
+  .case-detail-hero{grid-template-columns:1fr;gap:24px}
+  .case-detail-hero-image{height:300px}
+  .case-metrics{grid-template-columns:1fr}
+  .case-gallery{grid-template-columns:repeat(2,minmax(0,1fr))}
   .equipe-grid{grid-template-columns:1fr 1fr}
   .form-row{grid-template-columns:1fr}
   .footer-top{grid-template-columns:1fr;gap:32px;padding:48px 24px 36px}
@@ -337,4 +410,6 @@ blockquote cite{font-size:.88rem;font-style:normal;color:var(--blue-100);font-we
   h2{font-size:1.4rem}
   .qs-block{padding:20px}
   .qs-compromisso{padding:28px 20px}
+  .case-card-content{padding:22px}
+  .case-gallery{grid-template-columns:1fr}
 }
