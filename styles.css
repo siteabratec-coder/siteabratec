@@ -342,6 +342,8 @@ blockquote cite{font-size:.88rem;font-style:normal;color:var(--blue-100);font-we
 .footer-col a{font-size:.9rem;color:rgba(255,255,255,.6);transition:color .2s}
 .footer-col a:hover{color:var(--white)}
 .footer-bottom{border-top:1px solid rgba(255,255,255,.07);max-width:1200px;margin:0 auto;padding:24px;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;gap:8px;font-size:.82rem;color:rgba(255,255,255,.38)}
+.footer-bottom a{color:inherit;text-decoration:underline;transition:color .2s}
+.footer-bottom a:hover{color:var(--white)}
 
 /* ── WHATSAPP + SCROLL TOP ───────── */
 .whatsapp-float{position:fixed;bottom:32px;right:32px;z-index:900;width:58px;height:58px;background:var(--blue-300);border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(0,96,176,.4);transition:var(--transition);color:var(--white)}

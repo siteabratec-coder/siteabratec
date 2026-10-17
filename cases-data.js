@@ -215,7 +215,7 @@ window.ABRATEC_CASES = {
     title: 'Sistema de Combate a Incêndio - Região Vila Anastácio / SP',
     service: 'Sistema de combate a incêndio - motobomba diesel e rede de hidrantes',
     introduction: 'Manutenção e monitoramento do sistema de combate a incêndio, com intervenções mecânicas e testes reais na rede de hidrantes.',
-    heroImage: 'assets/cases/media/vila-anastacio-facade.jpg',
+    heroImage: 'assets/cases/media/vila-anastacio-facade.webp',
     heroAlt: 'Fachada envidraçada de empreendimento comercial na Região Vila Anastácio',
     facts: [
       ['Sistema', 'Sistema de combate a incêndio: motobomba diesel e rede de hidrantes'],
