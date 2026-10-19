@@ -138,7 +138,7 @@
   <!-- Faixa inferior com direitos autorais e slogan. -->
   <div class="footer-bottom">
     <p>ABRATEC - Comprometimento, Responsabilidade e Ação.</p>
-    <p>© 2026 <a href="https://conceicao13c.github.io/portifolio/" target="_blank" rel="noopener noreferrer">CR</a></p>
+    <p>© 2026 <a href="https://conceicao13c.github.io/portfolio/" target="_blank" rel="noopener noreferrer">CR</a></p>
   </div>
 </footer>`;
   }
