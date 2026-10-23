@@ -20,36 +20,25 @@ const ABRATEC_CONFIG = {
     logo:     'assets/logob.png',   // Caminho relativo ao index.html
   },
 
-  /* ----------------------------------------------------------
-   * CONTATO
+     /* ---------------------------------------------------------- */
+   /* CONTATO
    * ⚠️  Substitua NUMERO_WHATSAPP_A_CONFIGURAR pelo número real
    *     no formato internacional sem espaços ou símbolos.
    *     Exemplo: 5511947706372  (55 = Brasil, 11 = DDD, número)
-   * ---------------------------------------------------------- */
+   /* ---------------------------------------------------------- */
   contato: {
-    whatsappLink:     'https://w.app/abratec',
+    whatsappLink:    'https://wa.me/5511947706372?text=Ol%C3%A1%2C%20vim%20atrav%C3%A9s%20do%20site%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es.',
     whatsapp:         'NUMERO_WHATSAPP_A_CONFIGURAR',
     whatsappMensagem: 'Ol%C3%A1%21+Conhe%C3%A7a+a+ABRATEC+pelo+site+e+gostaria+de+mais+informa%C3%A7%C3%B5es+sobre+os+servi%C3%A7os+de+manuten%C3%A7%C3%A3o+e+engenharia.',
-    telefone:         'TELEFONE_A_CONFIGURAR',          // Ex: (11) 4437-2375
-    email:            'EMAIL_A_CONFIGURAR',             // Ex: contato@abra.tec.br
-    endereco:         'ENDEREÇO_A_CONFIGURAR',          // Ex: São Paulo - SP
+    
+    telefone:         '(11) 4437-2375',        // Ex: (11) 4437-2375
+    email:            'EMAIL_A_CONFIGURAR',     // Ex: contato@abra.tec.br
+    endereco:         'contato@abra.tec.br',          // Ex: São Paulo - SP
     horario:          '07h às 17h',
     site:             'www.abra.tec.br',
     cnpj:             '',  // Deixar vazio se não quiser exibir
   },
-
-  /* ----------------------------------------------------------
-   * SEO
-   * ---------------------------------------------------------- */
-  seo: {
-    titulo:    'ABRATEC | Manutenção Predial, Sistemas de Segurança e Engenharia',
-    descricao: 'Conheça a ABRATEC, especializada em manutenção preventiva e corretiva de grupos geradores, bombas, sistemas de incêndio, pressurização, exaustão e soluções técnicas para AVCB.',
-    ogImage:   'assets/logob.png',
-  },
-
-  /* ----------------------------------------------------------
-   * SERVIÇOS  (ordem dos cards na seção Áreas de Atuação)
-   * ---------------------------------------------------------- */
+  /* ---------------------------------------------------------- */
   servicos: [
     {
       id:        'geradores',
